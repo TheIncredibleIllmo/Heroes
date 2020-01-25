@@ -1,0 +1,34 @@
+<a [routerLink]="['/heroes']" [style.color]="heroe.color">
+    BACK
+</a>
+<h1 class="text-center text-uppercase animated fadeIn">Heroe's details...</h1>
+<br/>
+<br/>
+
+<div class="container animated fadeIn">
+    <div class="row">
+
+        <div class="col-md-6 col-12 centered-column ">
+            <img class="heroe-img" src="{{heroe.img}}" alt="">
+        </div>
+
+        <div class="col-md-6 col-12 mt-5 centered-column ">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2><small>{{heroe.name}}</small></h2>
+                    </div>
+
+                    <div class="col container-wrapper">
+                        <img class="publisher-img" [src]="heroe.publisher =='DC' ? 'assets/img/DCLogo.png' : 'assets/img/MarvelLogo.jpg'" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <hr/>
+                    <p class="text-justify">{{heroe.bio}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
