@@ -15,8 +15,6 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit() {
     this.heroes = this.heroesService.getHerores();
-
-    console.log(this.heroes);
   }
 
   public heroeSelected(index: number) {

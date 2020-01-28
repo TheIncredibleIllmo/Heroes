@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2><small>{{heroe.name}}</small></h2>
+                        <h2><small>{{heroe.name | uppercase}}</small></h2>
                     </div>
 
                     <div class="col container-wrapper">
@@ -27,6 +27,8 @@
                 <div class="row">
                     <hr/>
                     <p class="text-justify">{{heroe.bio}}</p>
+                    <p class="text-justify">{{heroe.aparition | date:'y'}}</p>
+
                 </div>
             </div>
         </div>

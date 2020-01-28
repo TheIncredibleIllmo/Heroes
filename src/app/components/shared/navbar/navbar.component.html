@@ -25,9 +25,9 @@
 
         </ul>
 
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Heroe" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        <form class="form-inline my-2 my-lg-0" onkeypress="return event.keyCode != 13">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search a hero..." (keyup.enter)="searchHero(searchBar.value)" #searchBar>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="button" (click)="searchHero(searchBar.value)">Search</button>
         </form>
 
     </div>
